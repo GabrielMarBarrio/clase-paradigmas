@@ -1,0 +1,17 @@
+body {
+    font-family:'Segoe UI';
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background: url('images/foggy-1149180_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+input {
+    font: inherit;
+}
+
+img {
+    box-shadow: 5px 5px 5px rgb(53, 53, 54);
+    width: 150px;
+}
