@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Escribe el primer numero</p>
+    <input type="number" id="input1">
+    <p>Escribe el segundo numero</p>
+    <input type="number" id="input2">
+
+    <br>
+
+    <select id="opciones">
+        <option value="">Seleccionar</option>
+        <option value="+">Sumar</option>
+        <option value="-">Restar</option>
+        <option value="*">Multiplicar</option>
+    </select>
+
+    <button onclick="operacion()">Realizar operacion</button>
+
+    <p id="resultado"></p>
+    
+    <script>
+        const operacion = () => {
+            let a = document.getElementById("input1").value;
+            let b = document.getElementById("input2").value;
+            let opcion = document.getElementById("opciones").value;
+            let resultado = document.getElementById("resultado");
+            if(opcion == "+"){
+                resultado.innerHTML = (parseInt(a) + parseInt(b));
+            }else if(opcion == "-"){
+                resultado.innerHTML = (parseInt(a) - parseInt(b));
+            }else if(opcion == "*"){
+                resultado.innerHTML = (parseInt(a) * parseInt(b));
+            }else{
+                resultado.innerHTML = ("Seleccione un signo mi rober");
+            }
+        }
+    </script>
+
+</body>
+</html>
