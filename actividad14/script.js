@@ -1,6 +1,7 @@
 const comprarCasco = () => {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
+            console.log("Comprar casco");
             resolve("Comprar casco")
         },1000)
     })
@@ -9,6 +10,7 @@ const comprarCasco = () => {
 const comprarGuantes = () => {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
+            console.log("Comprar guantes");
             resolve("Comprar guantes")
         },2000)
     })
@@ -17,6 +19,7 @@ const comprarGuantes = () => {
 const pasear = () => {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
+            console.log("Paseando con el rober");
             resolve("Bici")
         },8000)
     })
